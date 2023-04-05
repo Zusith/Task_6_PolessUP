@@ -18,9 +18,7 @@ string WordFormatNumber(double number)
     return wordformattext;
 }
 
-Hashtable HashtableCreateForWordFormatNumber()
-{
-     return new Hashtable
+Hashtable HashtableCreateForWordFormatNumber() => new Hashtable
      {
         { '-', "minus" },
         { ',', "point" },
@@ -35,4 +33,3 @@ Hashtable HashtableCreateForWordFormatNumber()
         { '8', "eight" },
         { '9', "nine" }
     };
-}
