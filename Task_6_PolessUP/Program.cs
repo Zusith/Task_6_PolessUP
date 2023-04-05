@@ -19,19 +19,21 @@ string WordFormatNumber(double number)
 }
 
 Hashtable HashtableCreateForWordFormatNumber()
-{ 
-    Hashtable numbersWordTable = new Hashtable();
-    numbersWordTable.Add('-', "minus");
-    numbersWordTable.Add(',', "point");
-    numbersWordTable.Add('0', "zero");
-    numbersWordTable.Add('1', "one");
-    numbersWordTable.Add('2', "two");
-    numbersWordTable.Add('3', "three");
-    numbersWordTable.Add('4', "four");
-    numbersWordTable.Add('5', "five");
-    numbersWordTable.Add('6', "six");
-    numbersWordTable.Add('7', "seven");
-    numbersWordTable.Add('8', "eight");
-    numbersWordTable.Add('9', "nine");
+{
+    Hashtable numbersWordTable = new Hashtable
+    {
+        { '-', "minus" },
+        { ',', "point" },
+        { '0', "zero" },
+        { '1', "one" },
+        { '2', "two" },
+        { '3', "three" },
+        { '4', "four" },
+        { '5', "five" },
+        { '6', "six" },
+        { '7', "seven" },
+        { '8', "eight" },
+        { '9', "nine" }
+    };
     return numbersWordTable;
 }
